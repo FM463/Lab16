@@ -24,7 +24,7 @@ namespace Lab16
         {
             Console.WriteLine("Введите свое ФИО");
             string[] fio = Console.ReadLine().Split(' ');
-            Console.WriteLine(fio[0] + " " + fio[1][0] + " " + fio[2][0]); //Вот, фамилия и инициалы
+            Console.WriteLine(fio[0] + " " + fio[1][0] + " " + fio[2][0]); //фамилия и инициалы
         }
     }
 }

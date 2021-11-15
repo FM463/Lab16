@@ -43,13 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10.cs" />
+    <Compile Include="11.cs" />
+    <Compile Include="13.cs" />
+    <Compile Include="15.cs" />
+    <Compile Include="16.cs" />
+    <Compile Include="17.cs" />
+    <Compile Include="18.cs" />
+    <Compile Include="19.cs" />
     <Compile Include="4WS.cs" />
     <Compile Include="5.cs" />
+    <Compile Include="6.cs" />
+    <Compile Include="9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="File.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

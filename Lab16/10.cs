@@ -1,12 +1,11 @@
-﻿/*5.Напишите программу, предлагающую пользователю ввести его фамилию, имя и отчество , 
- * а затем выводящую эти сведения в текстовый файл.*/
+﻿/*10.Напишите программу, считывающую и распечатывающую двоичный файл, созданный в п.5 . 
+ * Переменную для чтения объекта определить в стеке (свободной памяти).*/
 
-//Код для чтения текстового файла
 using System;
 using System.IO;
 namespace readwriteapp
 {
-    class Fio 
+    class Fio
     {
         [STAThread]
         static void Main(string[] args)
@@ -15,6 +14,10 @@ namespace readwriteapp
             try
             {
                 StreamReader sr = new StreamReader("C:\\Sample.txt");
+                string path = @"path\to\my\file";
+                byte[] data = File.ReadAllBytes(path);
+                string dataString = String.Concat(data.Select(b => b.ToString("x2")));
+                textBox.Text = dataString;
                 line = sr.ReadLine();
                 while (line != null)
                 {
